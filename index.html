@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macdiel Arian González Mora — Portafolio</title>
+<meta name="description" content="Portafolio de Macdiel Arian González Mora, Desarrollador Fullstack especializado en Odoo.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <img class="hero__avatar" src="images/avatar.jpg" alt="Foto de perfil de Macdiel Arian González Mora">
+    <h1 class="hero__name">Macdiel Arian González Mora</h1>
+    <p class="hero__title">Desarrollador Fullstack | Python · JavaScript · Odoo · ERP · Integraciones</p>
+    <p class="hero__location">Holguín, Cuba · 100% Remoto</p>
+    <div class="hero__contact">
+      <a href="mailto:macdielagm@gmail.com">macdielagm@gmail.com</a>
+      <span class="dot">·</span>
+      <a href="tel:+5358363115">+53 58363115</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <p>
+        Desarrollador Fullstack con cerca de tres años de experiencia especializado en el
+        ecosistema Odoo (Python, ORM, QWeb, Owl Framework), y experiencia adicional en
+        desarrollo de aplicaciones de escritorio (Java) y sistemas web (React, Node.js).
+        Trayectoria 100% remota, colaborando con clientes y equipos en España, Panamá,
+        Honduras, México y Estados Unidos.
+      </p>
+    </section>
+
+    <section aria-label="Proyectos">
+      <h2 class="section-title">Proyectos</h2>
+      <p class="section-hint">Elige una categoría y desliza cada galería para ver más imágenes</p>
+
+      <div class="category-tabs-wrap">
+        <nav class="category-tabs" role="tablist" aria-label="Categorías de proyectos">
+          <span class="tab-indicator" aria-hidden="true"></span>
+          <button class="category-tab is-active" id="tab-odoo" role="tab"
+                  aria-selected="true" aria-controls="panel-odoo" data-target="panel-odoo">Desarrollo Odoo</button>
+          <button class="category-tab" id="tab-web" role="tab"
+                  aria-selected="false" aria-controls="panel-web" data-target="panel-web" tabindex="-1">Desarrollo Web</button>
+          <button class="category-tab" id="tab-escritorio" role="tab"
+                  aria-selected="false" aria-controls="panel-escritorio" data-target="panel-escritorio" tabindex="-1">Desarrollo Escritorio</button>
+        </nav>
+      </div>
+
+      <!-- ================= DESARROLLO ODOO ================= -->
+      <div class="projects-category is-active" id="panel-odoo" role="tabpanel" aria-labelledby="tab-odoo">
+        <div class="project-list">
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/widget-botones-redes-sociales-1.png" alt="Widget Botones Redes Sociales - imagen 1">
+                <img src="images/odoo/widget-botones-redes-sociales-2.png" alt="Widget Botones Redes Sociales - imagen 2">
+                <img src="images/odoo/widget-botones-redes-sociales-3.png" alt="Widget Botones Redes Sociales - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Widget de Botones de Redes Sociales</h4>
+              <p class="project-card__meta">Salvha</p>
+              <p class="project-card__desc">Widget personalizado de Odoo que integra botones de contacto
+                directo (llamada, WhatsApp) en la página de productos, facilitando la comunicación
+                instantánea entre clientes y la tienda.</p>
+              <p class="project-card__tags">#Odoo #QWeb #Widget</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/widget-popup-1.png" alt="Widget Popup Interactivo - imagen 1">
+                <img src="images/odoo/widget-popup-2.png" alt="Widget Popup Interactivo - imagen 2">
+                <img src="images/odoo/widget-popup-3.png" alt="Widget Popup Interactivo - imagen 3">
+                <img src="images/odoo/widget-popup-4.png" alt="Widget Popup Interactivo - imagen 4">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Widget de Popup Interactivo</h4>
+              <p class="project-card__meta">Salvha</p>
+              <p class="project-card__desc">Sistema de popup personalizado para Odoo que permite mostrar
+                información relevante, preguntas frecuentes y notificaciones al usuario, con opciones
+                de minimización y selección interactiva.</p>
+              <p class="project-card__tags">#Odoo #QWeb #Widget</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/widget-resenas-google-1.png" alt="Widget Reseñas Google - imagen 1">
+                <img src="images/odoo/widget-resenas-google-2.png" alt="Widget Reseñas Google - imagen 2">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Widget de Reseñas Google</h4>
+              <p class="project-card__meta">Salvha</p>
+              <p class="project-card__desc">Integración de reseñas de Google en Odoo, mostrando
+                valoraciones y opiniones de clientes directamente en la tienda online con panel
+                de configuración desde el backend.</p>
+              <p class="project-card__tags">#Odoo #Google #Widget</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/facturacion-pos-honduras-1.svg" alt="Facturación y POS Honduras - imagen 1">
+                <img src="images/odoo/facturacion-pos-honduras-2.svg" alt="Facturación y POS Honduras - imagen 2">
+                <img src="images/odoo/facturacion-pos-honduras-3.svg" alt="Facturación y POS Honduras - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Facturación y POS — Localización Fiscal Honduras</h4>
+              <p class="project-card__meta">Freelance – Cliente Directo · Honduras</p>
+              <p class="project-card__desc">Desarrollo de un módulo para adaptar la facturación y el
+                Punto de Venta a los requisitos fiscales de Honduras.</p>
+              <p class="project-card__tags">#Odoo #Facturación #Honduras</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/migracion-datos-1.svg" alt="Migración Masiva de Datos - imagen 1">
+                <img src="images/odoo/migracion-datos-2.svg" alt="Migración Masiva de Datos - imagen 2">
+                <img src="images/odoo/migracion-datos-3.svg" alt="Migración Masiva de Datos - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Migración y Exportación Masiva de Datos</h4>
+              <p class="project-card__meta">JUMO Technologies S.L. – Tiempo Completo · Barcelona, España</p>
+              <p class="project-card__desc">Optimización del proceso de migración y exportación masiva
+                de datos desde Excel y otras instancias de Odoo, permitiendo manejar hasta 5 archivos
+                grandes por operación y reduciendo ~40% el tiempo de carga sin que el sistema se colgara.</p>
+              <p class="project-card__tags">#Odoo #ETL #Python</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/integracion-krossbooking-1.svg" alt="Integración Krossbooking - imagen 1">
+                <img src="images/odoo/integracion-krossbooking-2.svg" alt="Integración Krossbooking - imagen 2">
+                <img src="images/odoo/integracion-krossbooking-3.svg" alt="Integración Krossbooking - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Integración Krossbooking + Odoo</h4>
+              <p class="project-card__meta">JUMO Technologies S.L. – Tiempo Completo · Barcelona, España</p>
+              <p class="project-card__desc">Integración de Krossbooking con Odoo para automatizar
+                reservas, facturación y conciliación bancaria, reduciendo en torno a un 30% el tiempo
+                dedicado a estas tareas frente al procesamiento manual.</p>
+              <p class="project-card__tags">#Odoo #API #Integraciones</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/asistencia-ausencias-1.svg" alt="Asistencia y Ausencias - imagen 1">
+                <img src="images/odoo/asistencia-ausencias-2.svg" alt="Asistencia y Ausencias - imagen 2">
+                <img src="images/odoo/asistencia-ausencias-3.svg" alt="Asistencia y Ausencias - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Módulo de Asistencia y Ausencias</h4>
+              <p class="project-card__meta">JUMO Technologies S.L. – Tiempo Completo · Barcelona, España</p>
+              <p class="project-card__desc">Diseño y personalización de vistas consolidadas por
+                día/mes que permiten controlar el 100% de entradas y salidas, reduciendo ~40% los
+                errores y ausencias mal registradas.</p>
+              <p class="project-card__tags">#Odoo #QWeb #Owl</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/integracion-amazon-seller-1.svg" alt="Integración Amazon Seller - imagen 1">
+                <img src="images/odoo/integracion-amazon-seller-2.svg" alt="Integración Amazon Seller - imagen 2">
+                <img src="images/odoo/integracion-amazon-seller-3.svg" alt="Integración Amazon Seller - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Integración con Amazon Seller</h4>
+              <p class="project-card__meta">JUMO Technologies S.L. – Tiempo Completo · Barcelona, España</p>
+              <p class="project-card__desc">Desarrollo de un módulo de integración con Amazon Seller
+                para sincronizar pedidos con Odoo, gestionando ventas e inventario directamente
+                desde el ERP.</p>
+              <p class="project-card__tags">#Odoo #Ecommerce #API</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/odoo/personalizacion-modulos-reportes-1.svg" alt="Módulos y Reportes Personalizados - imagen 1">
+                <img src="images/odoo/personalizacion-modulos-reportes-2.svg" alt="Módulos y Reportes Personalizados - imagen 2">
+                <img src="images/odoo/personalizacion-modulos-reportes-3.svg" alt="Módulos y Reportes Personalizados - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Personalización de Módulos y Reportes</h4>
+              <p class="project-card__meta">Freelance – Cliente Directo · La Habana, Cuba</p>
+              <p class="project-card__desc">Adaptación de módulos estándar según requisitos del
+                cliente, creación de reportes PDF personalizados y desarrollo de un módulo de
+                conexión entre servidores Odoo mediante RPC.</p>
+              <p class="project-card__tags">#Odoo #QWeb #RPC</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ================= DESARROLLO WEB ================= -->
+      <div class="projects-category" id="panel-web" role="tabpanel" aria-labelledby="tab-web" hidden>
+        <div class="project-list">
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/web/reservas-vuelos-1.svg" alt="Sistema de Reservas de Vuelos - imagen 1">
+                <img src="images/web/reservas-vuelos-2.svg" alt="Sistema de Reservas de Vuelos - imagen 2">
+                <img src="images/web/reservas-vuelos-3.svg" alt="Sistema de Reservas de Vuelos - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Sistema Web de Reservas de Vuelos</h4>
+              <p class="project-card__meta">Freelance – Cliente Directo · Miami, Estados Unidos</p>
+              <p class="project-card__desc">Desarrollo fullstack de un sistema de reservas de vuelos
+                para una agencia de viajes, utilizando React en el frontend y Node.js en el backend.</p>
+              <p class="project-card__tags">#React #NodeJS #Fullstack</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ================= DESARROLLO ESCRITORIO ================= -->
+      <div class="projects-category" id="panel-escritorio" role="tabpanel" aria-labelledby="tab-escritorio" hidden>
+        <div class="project-list">
+
+          <article class="project-card">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior">‹</button>
+              <div class="carousel__track">
+                <img src="images/escritorio/gestion-monitoreo-java-1.svg" alt="Gestión y Monitoreo en Java - imagen 1">
+                <img src="images/escritorio/gestion-monitoreo-java-2.svg" alt="Gestión y Monitoreo en Java - imagen 2">
+                <img src="images/escritorio/gestion-monitoreo-java-3.svg" alt="Gestión y Monitoreo en Java - imagen 3">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Sistema de Gestión y Monitoreo en Java</h4>
+              <p class="project-card__meta">Freelance – Cliente Directo · Holguín, Cuba</p>
+              <p class="project-card__desc">Sistema de escritorio para la gestión de usuarios y
+                servicios de un negocio operando vía red intranet, junto con una aplicación
+                complementaria de monitoreo en tiempo real que detecta fallos de red, como la
+                caída de un switch y los equipos afectados.</p>
+              <p class="project-card__tags">#Java #Escritorio #Redes</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills__group">
+        <p class="skills__label">Backend y ERP</p>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">ORM de Odoo</span>
+          <span class="chip">QWeb</span><span class="chip">PostgreSQL</span><span class="chip">Java</span>
+          <span class="chip">Node.js</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">Frontend y Web</p>
+        <div class="chips">
+          <span class="chip">JavaScript</span><span class="chip">Owl Framework</span>
+          <span class="chip">React</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">Especialización en Odoo</p>
+        <div class="chips">
+          <span class="chip">Módulos a Medida</span><span class="chip">Punto de Venta</span>
+          <span class="chip">Migraciones</span><span class="chip">Localizaciones Fiscales</span>
+          <span class="chip">Integraciones Externas</span><span class="chip">Reportes Avanzados</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>¿Hablamos de tu proyecto?</p>
+    <a class="footer__cta" href="mailto:macdielagm@gmail.com">macdielagm@gmail.com</a>
+    <p class="footer__note">© <span id="year"></span> Macdiel Arian González Mora</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+    <button class="lightbox__close" aria-label="Cerrar">✕</button>
+    <div class="lightbox__track-wrap">
+      <button class="lightbox__arrow lightbox__arrow--prev" aria-label="Imagen anterior">‹</button>
+      <div class="lightbox__track" id="lightbox-track"></div>
+      <button class="lightbox__arrow lightbox__arrow--next" aria-label="Imagen siguiente">›</button>
+    </div>
+    <div class="lightbox__dots" id="lightbox-dots"></div>
+    <p class="lightbox__title" id="lightbox-title"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
