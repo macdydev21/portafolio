@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://macdydev21.github.io/portafolio/sitemap.xml
