@@ -741,7 +741,7 @@ function initProjectModal() {
 
   document.querySelectorAll(".project-card").forEach((card) => {
     card.addEventListener("click", (e) => {
-      if (e.target.closest(".carousel__arrow")) return;
+      if (e.target.closest(".carousel__arrow") || e.target.closest(".project-card__link")) return;
       openModal(card);
     });
   });
@@ -763,6 +763,7 @@ const TRANSLATIONS_EN = {
   "badge-countries": `🤝 Clients &amp; work in 6 countries`,
   "cta-view-projects": `View projects`,
   "cta-contact": `Contact`,
+  "cta-view-repo": `View code on GitHub`,
   "aria-send-email": `Send email`,
   "aria-call-phone": `Call`,
   "aria-linkedin": `LinkedIn profile`,
@@ -792,74 +793,85 @@ const TRANSLATIONS_EN = {
   "exp1-date": `Aug 2026 – Sep 2026`,
   "exp1-title": `Fullstack Developer — Salvha (Print Shop, Custom ERP)`,
   "exp1-place": `Freelance · Direct client · Peru · Odoo 18`,
-  "exp1-desc": `Attendance module with photos, facial recognition (face-api.js) and geolocation that
-              <strong>strengthened daily staff control</strong>; facial verification and digital signature
-              in the sales process, <strong>improving traceability and security of every
-              transaction</strong>; a Google reviews widget via SerpApi to <strong>reinforce trust with new
-              customers</strong>; quick-call, WhatsApp buttons and a promo popup that <strong>boosted
-              customer acquisition</strong>; and fixed asset conflicts in a third-party theme, removing
-              duplicates and CDN dependencies.`,
+  "exp1-desc": `<li>Attendance module with photos, facial recognition (face-api.js) and geolocation.
+                <strong>Strengthened daily staff control.</strong></li>
+              <li>Facial verification and digital signature in the sales process.
+                <strong>Improved traceability and security of every transaction.</strong></li>
+              <li>Google reviews widget integrated via SerpApi.
+                <strong>Reinforced trust with new customers.</strong></li>
+              <li>Quick-call, WhatsApp buttons and a promo popup.
+                <strong>Boosted customer acquisition.</strong></li>
+              <li>Fixed asset conflicts in a third-party theme, removing duplicates and CDN dependencies.</li>`,
 
   "exp2-date": `Jun 2026 – Jul 2026`,
   "exp2-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
   "exp2-place": `Freelance · Mexico · Odoo 19`,
-  "exp2-desc": `Improvements to the Odoo POS terminal —pre-order printing and a second printer— that
-              <strong>sped up customer service at checkout</strong>; and an OWL patch with debounce and
-              mutex over the native sync that <strong>prevented race conditions and manual reloads</strong>.`,
+  "exp2-desc": `<li>Improvements to the Odoo POS terminal: pre-order printing and a second printer.
+                <strong>Sped up customer service at checkout.</strong></li>
+              <li>OWL patch with debounce and mutex over the native sync.
+                <strong>Prevented race conditions and manual reloads.</strong></li>`,
 
   "exp3-date": `Jan 2026 – Feb 2026`,
   "exp3-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
   "exp3-place": `Freelance · Honduras · Odoo 18`,
-  "exp3-desc": `E-invoicing module in Python, QWeb and OWL, adapting the Point of Sale to Honduras' tax
-              localization and <strong>ensuring tax compliance with the Honduran tax authorities</strong>.`,
+  "exp3-desc": `<li>E-invoicing module in Python, QWeb and OWL, adapting the Point of Sale to Honduras' tax
+                localization.
+                <strong>Ensured tax compliance with the Honduran tax authorities.</strong></li>`,
 
   "exp4-date": `Oct 2025 – Jul 2026`,
   "exp4-title": `Fullstack Developer — Sherwood Forest, S.A. (ERP/Odoo)`,
   "exp4-place": `Part-Time Collaborator · Panama City, Panama · Odoo 18`,
-  "exp4-desc": `Point of Sale and receipt customization coordinating priorities with the Project
-              Manager, <strong>improving the efficiency of the sales process</strong>; Excel (xlsxwriter)
-              and PDF reports that <strong>sped up access to key information for the management
-              team</strong>; digitally signed e-invoicing for Honduras, El Salvador (DTE) and Guatemala
-              (FEL), <strong>ensuring regulatory compliance in each country</strong>; and an Odoo
-              instance-to-instance sync module via XML-RPC that <strong>optimized multi-branch
-              operations</strong>.`,
+  "exp4-desc": `<li>Point of Sale and receipt customization, coordinating priorities with the Project Manager.
+                <strong>Improved the efficiency of the sales process.</strong></li>
+              <li>Excel (xlsxwriter) and PDF reports.
+                <strong>Sped up access to key information for the management team.</strong></li>
+              <li>Digitally signed e-invoicing for Honduras, El Salvador (DTE) and Guatemala (FEL).
+                <strong>Ensured regulatory compliance in each country.</strong></li>
+              <li>Odoo instance-to-instance sync module via XML-RPC.
+                <strong>Optimized multi-branch operations.</strong></li>`,
 
   "exp5-date": `Jul 2024 – Mar 2026`,
   "exp5-title": `Fullstack Developer — JUMO Technologies S.L. (ERP/Odoo)`,
   "exp5-place": `Full-Time · Barcelona, Spain · Odoo 14 to 18`,
-  "exp5-desc": `Custom modules and customization of standard modules (Contacts, Sales, Purchase,
-              Inventory, Accounting and Fleet) that <strong>adapted the ERP to the business'
-              needs</strong>; Point of Sale and receipt customization with OWL/QWeb for reservations,
-              kitchen management and order issuing, <strong>speeding up daily operations</strong>;
-              migrations between Odoo versions (14 to 18) <strong>with no data loss</strong>; advanced
-              Excel and QWeb reports that <strong>made decision-making easier</strong>; Krossbooking and
-              Amazon Seller integration via REST APIs and cron jobs that <strong>automated reservations,
-              invoicing and inventory sync</strong>; and customization of the Attendance, Contacts and
-              Fleet modules, <strong>strengthening control across Helpdesk-linked locations and vehicle
-              repairs</strong>.`,
+  "exp5-desc": `<li>Custom modules and customization of standard modules (Contacts, Sales, Purchase,
+                Inventory, Accounting and Fleet).
+                <strong>Adapted the ERP to the business' needs.</strong></li>
+              <li>Point of Sale and receipt customization with OWL/QWeb for reservations, kitchen
+                management and order issuing.
+                <strong>Sped up daily operations.</strong></li>
+              <li>Migrations between Odoo versions (14 to 18).
+                <strong>Ensured operational continuity with no data loss.</strong></li>
+              <li>Advanced Excel and QWeb reports.
+                <strong>Made decision-making easier.</strong></li>
+              <li>Krossbooking and Amazon Seller integration via REST APIs and cron jobs.
+                <strong>Automated reservations, invoicing and inventory sync.</strong></li>
+              <li>Customization of the Attendance, Contacts and Fleet modules.
+                <strong>Strengthened control across Helpdesk-linked locations and vehicle repairs.</strong></li>`,
 
   "exp6-date": `Apr 2024 – Jun 2024`,
   "exp6-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
   "exp6-place": `Freelance · Havana, Cuba · Odoo 16 and 17`,
-  "exp6-desc": `Adaptation of standard Odoo modules (ORM and XML views) to the client's requirements,
-              <strong>fitting the ERP to their internal processes</strong>; custom PDF reports with QWeb
-              that <strong>improved the presentation of key business information</strong>; and a
-              server-to-server Odoo connection module via XML-RPC with Docker, <strong>standardizing the
-              environment and speeding up deployment</strong>.`,
+  "exp6-desc": `<li>Adaptation of standard Odoo modules (ORM and XML views) to the client's requirements.
+                <strong>Fit the ERP to their internal processes.</strong></li>
+              <li>Custom PDF reports with QWeb.
+                <strong>Improved the presentation of key business information.</strong></li>
+              <li>Server-to-server Odoo connection module via XML-RPC with Docker.
+                <strong>Standardized the environment and sped up deployment.</strong></li>`,
 
   "exp7-date": `Sep 2023 – Dec 2023`,
   "exp7-title": `Fullstack Developer — Direct Client`,
   "exp7-place": `Freelance · Miami, United States`,
-  "exp7-desc": `Web-based flight booking system with React on the frontend and Node.js on the backend
-              that <strong>digitized and streamlined the booking process</strong>.`,
+  "exp7-desc": `<li>Web-based flight booking system with React on the frontend and Node.js on the backend.
+                <strong>Digitized and streamlined the booking process.</strong></li>`,
 
   "exp8-date": `Mar 2021 – May 2021`,
   "exp8-title": `Java Developer — Direct Client`,
   "exp8-place": `Freelance · Holguín, Cuba`,
-  "exp8-desc": `Desktop system in Java (Swing) with MySQL to manage users and services on an intranet
-              network, <strong>centralizing its administration</strong>; and a real-time network monitoring
-              app based on MAC addresses that <strong>quickly detected network failures</strong>, such as a
-              switch going down.`,
+  "exp8-desc": `<li>Desktop system in Java (Swing) with MySQL to manage users and services on an intranet
+                network.
+                <strong>Centralized its administration.</strong></li>
+              <li>Real-time network monitoring app based on MAC addresses.
+                <strong>Quickly detected network failures, such as a switch going down.</strong></li>`,
 
   "proj-title": `Projects`,
   "proj-hint": `Choose a category and swipe each gallery to see more images`,
