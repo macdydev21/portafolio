@@ -174,6 +174,8 @@ const ICON_SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" str
 const ICON_MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>';
 const ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
 const ICON_CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+const ICON_MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>';
+const ICON_MENU_CLOSE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>';
 
 function initSoundToggle() {
   const btn = document.getElementById("sound-toggle");
@@ -1024,6 +1026,9 @@ const TRANSLATIONS_EN = {
   "edu2-desc": `Training in programming logic, data structures, databases and software engineering
             fundamentals.`,
 
+  "contact-page-title": `Let's talk about your project`,
+  "contact-page-hint": `Pick whichever channel you prefer — email or WhatsApp — and I'll get back to you as soon as possible.`,
+
   "footer-title": `Interested in turning your idea into a digital or software solution?`,
   "footer-subtitle": `Available for freelance projects and full-time collaborations, 100% remote,
       in Odoo, web development and process automation.`,
@@ -1285,6 +1290,66 @@ function initBrandAnimation() {
   setTimeout(() => brand.classList.add("is-expanded"), delay);
 }
 
+/* ---------- Menú móvil (hamburguesa) ---------- */
+function initMobileNav() {
+  const toggle = document.getElementById("navbar-toggle");
+  const navbar = document.querySelector(".navbar");
+  const links = document.getElementById("navbar-links");
+  if (!toggle || !navbar || !links) return;
+
+  function labelFor(open) {
+    if (open) return currentLang() === "en" ? "Close menu" : "Cerrar menú";
+    return currentLang() === "en" ? "Open menu" : "Abrir menú";
+  }
+
+  function setOpen(open) {
+    navbar.classList.toggle("is-menu-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.innerHTML = open ? ICON_MENU_CLOSE : ICON_MENU;
+    toggle.setAttribute("aria-label", labelFor(open));
+  }
+
+  setOpen(false);
+
+  toggle.addEventListener("click", () => {
+    setOpen(!navbar.classList.contains("is-menu-open"));
+  });
+
+  links.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => setOpen(false));
+  });
+
+  const ctaLink = document.querySelector(".navbar__cta");
+  if (ctaLink) ctaLink.addEventListener("click", () => setOpen(false));
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (navbar.classList.contains("is-menu-open") && !navbar.contains(e.target)) setOpen(false);
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 880) setOpen(false);
+  });
+
+  document.addEventListener("languagechange:app", () => {
+    toggle.setAttribute("aria-label", labelFor(navbar.classList.contains("is-menu-open")));
+  });
+}
+
+/* ---------- Resalta el enlace de la página actual en el navbar ---------- */
+function initActiveNavLink() {
+  const links = document.querySelectorAll(".navbar__links a");
+  if (!links.length) return;
+  const current = window.location.pathname.split("/").pop() || "index.html";
+  links.forEach((a) => {
+    const hrefPage = (a.getAttribute("href") || "").split("#")[0] || "index.html";
+    if (hrefPage === current) a.classList.add("is-active");
+  });
+}
+
 function initBackToTop() {
   const btn = document.getElementById("back-to-top");
   if (!btn) return;
@@ -1409,7 +1474,7 @@ function initScrollReveal() {
         obs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+  }, { threshold: 0, rootMargin: "0px 0px -40px 0px" });
 
   items.forEach((el) => observer.observe(el));
 }
@@ -1471,6 +1536,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initBackToTop();
   initScrollProgress();
   initBrandAnimation();
+  initMobileNav();
+  initActiveNavLink();
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

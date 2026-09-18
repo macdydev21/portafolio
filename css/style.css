@@ -198,10 +198,53 @@ img { max-width: 100%; }
 
 .navbar__links a:hover { color: var(--accent); text-decoration: none; }
 
+.navbar__links a.is-active { color: var(--accent); }
+
 .navbar__cta { flex-shrink: 0; }
 
-@media (max-width: 720px) {
-  .navbar__cta { display: none; }
+/* ---------- Menú móvil (hamburguesa) ---------- */
+.navbar__toggle { display: none; }
+
+@media (max-width: 880px) {
+  .navbar__toggle { display: inline-flex; }
+
+  .navbar__inner { flex-wrap: wrap; row-gap: 10px; }
+
+  .navbar__brand { order: 0; }
+  .navbar__controls { order: 1; margin-left: auto; }
+
+  .navbar__links {
+    order: 2;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+  }
+
+  .navbar__links a {
+    padding: 12px 6px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+  }
+
+  .navbar__cta {
+    order: 3;
+    flex-basis: 100%;
+    display: none;
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+  .navbar.is-menu-open .navbar__links {
+    max-height: 600px;
+    opacity: 1;
+  }
+
+  .navbar.is-menu-open .navbar__cta { display: inline-flex; }
 }
 
 /* ---------- Navbar controls (tema / sonido / idioma) ---------- */
