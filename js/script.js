@@ -238,6 +238,12 @@ const TAG_ICONS = {
   "#Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   "#PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   "#Docker": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  "#OWL": "images/icons/owl.png",
+  "#JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  "#Vite": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+  "#TailwindCSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  "#SQLite": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+  "#SCSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
 };
 
 const TAG_TRANSLATIONS_EN = {
@@ -760,7 +766,7 @@ const TRANSLATIONS_EN = {
   "hero-subtitle": `Specialized in <strong>Odoo</strong> and web development — Python · JavaScript · React · ORM · QWeb · OWL Framework`,
   "badge-remote": `🌎 100% Remote`,
   "badge-experience": `🚀 ~3 years of experience`,
-  "badge-countries": `🤝 Clients &amp; work in 6 countries`,
+  "badge-countries": `🤝 Clients &amp; work in 8 countries`,
   "cta-view-projects": `View projects`,
   "cta-contact": `Contact`,
   "cta-view-repo": `View code on GitHub`,
@@ -790,28 +796,41 @@ const TRANSLATIONS_EN = {
   "order-desc": `Most recent first`,
   "order-asc": `Oldest first`,
 
-  "exp1-date": `Aug 2026 – Sep 2026`,
+  "exp9-date": `Sep 2026 – Present`,
+  "exp9-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
+  "exp9-place": `Freelance · Colombia · Odoo 19`,
+  "exp9-desc": `<li>QWeb redesign of the invoice, which was too long, into a compact and well-organized layout.
+                <strong>Reduced paper usage and improved readability.</strong></li>`,
+
+  "exp10-date": `Sep 2026 – Present`,
+  "exp10-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
+  "exp10-place": `Freelance · Argentina · Odoo 18`,
+  "exp10-desc": `<li>ePagos integration as a payment provider: payment links, recurring direct debit (CBU and card), retries, refunds and chargebacks.
+                <strong>Streamlined recurring collections with less manual work.</strong></li>`,
+
+  "exp1-date": `Aug 2026 – Present`,
   "exp1-title": `Fullstack Developer — Salvha (Print Shop, Custom ERP)`,
   "exp1-place": `Freelance · Direct client · Peru · Odoo 18`,
-  "exp1-desc": `<li>Attendance module with photos, facial recognition (face-api.js) and geolocation.
-                <strong>Strengthened daily staff control.</strong></li>
-              <li>Facial verification and digital signature in the sales process.
-                <strong>Improved traceability and security of every transaction.</strong></li>
-              <li>Google reviews widget integrated via SerpApi.
-                <strong>Reinforced trust with new customers.</strong></li>
-              <li>Quick-call, WhatsApp buttons and a promo popup.
-                <strong>Boosted customer acquisition.</strong></li>
-              <li>Fixed asset conflicts in a third-party theme, removing duplicates and CDN dependencies.</li>`,
+  "exp1-desc": `<li>Attendance module with photos, facial recognition (face-api.js) and geolocation, plus facial verification with digital signature in sales.
+                <strong>Strengthened staff control and the traceability of every transaction.</strong></li>
+              <li>Barcode tool tracking, material waste control (OWL dashboard) and expense detail modules with mismatch alerts.
+                <strong>Gave tool traceability, reuse of leftover material and payments without discrepancies.</strong></li>
+              <li>Google reviews (SerpApi), call and WhatsApp buttons and a promo popup on the website.
+                <strong>Reinforced trust and customer acquisition.</strong></li>
+              <li>Improved a third-party theme (Bootstrap 5/SCSS): spacing, self-hosted Font Awesome and Animate.css, and accessible focus.
+                <strong>A cleaner, faster and more accessible site.</strong></li>`,
 
-  "exp2-date": `Jun 2026 – Jul 2026`,
+  "exp2-date": `Jun 2026 – Present`,
   "exp2-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
   "exp2-place": `Freelance · Mexico · Odoo 19`,
-  "exp2-desc": `<li>Improvements to the Odoo POS terminal: pre-order printing and a second printer.
-                <strong>Sped up customer service at checkout.</strong></li>
-              <li>OWL patch with debounce and mutex over the native sync.
-                <strong>Prevented race conditions and manual reloads.</strong></li>`,
+  "exp2-desc": `<li>Pre-order printing and a second printer in the POS, with an OWL patch (debounce and mutex) over the native sync.
+                <strong>Sped up checkout and prevented race conditions and manual reloads.</strong></li>
+              <li>Adjustments to the receipt, invoices, Contacts and Pricelists (new fields, barcodes and phone hidden for certain users).
+                <strong>Protected sensitive data.</strong></li>
+              <li>Trained and guided the client on using Odoo and configuring her processes.
+                <strong>She now runs her day-to-day with more autonomy.</strong></li>`,
 
-  "exp3-date": `Jan 2026 – Feb 2026`,
+  "exp3-date": `Feb 2026 – Mar 2026`,
   "exp3-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
   "exp3-place": `Freelance · Honduras · Odoo 18`,
   "exp3-desc": `<li>E-invoicing module in Python, QWeb and OWL, adapting the Point of Sale to Honduras' tax
@@ -846,7 +865,9 @@ const TRANSLATIONS_EN = {
               <li>Krossbooking and Amazon Seller integration via REST APIs and cron jobs.
                 <strong>Automated reservations, invoicing and inventory sync.</strong></li>
               <li>Customization of the Attendance, Contacts and Fleet modules.
-                <strong>Strengthened control across Helpdesk-linked locations and vehicle repairs.</strong></li>`,
+                <strong>Strengthened control across Helpdesk-linked locations and vehicle repairs.</strong></li>
+              <li>Trained clients on Odoo workflows: Point of Sale, Attendance, Contacts and Inventory.
+                <strong>More autonomous users after each project.</strong></li>`,
 
   "exp6-date": `Apr 2024 – Jun 2024`,
   "exp6-title": `Fullstack Developer — Direct Client (ERP/Odoo)`,
@@ -880,128 +901,67 @@ const TRANSLATIONS_EN = {
   "filter-all": `All`,
 
   "proj1-title": `Krossbooking + Odoo Integration`,
-  "proj1-desc": `The property owners renting out their rooms spent hours manually copying
-                reservations and reconciling payments between Krossbooking and the ERP. I built a
-                REST API integration that syncs
-                reservations, invoices automatically and reconciles payments, cutting the time spent
-                on these tasks by around 30% compared to the manual process.`,
+  "proj1-desc": `Owners copied reservations and reconciled payments by hand between Krossbooking and the ERP. I integrated both via REST API to sync reservations, invoice and reconcile payments, cutting that time by ~30%.`,
 
   "proj2-title": `Data Migration from Excel`,
-  "proj2-desc": `Manually setting up a new business in Odoo (hundreds of products, images, employees,
-                customers, vendors, categories, accounting entries) could take days and was
-                error-prone. I built an import wizard with 20+ dedicated actions per data type
-                directly from Excel, getting a client's full catalog operational in hours instead of
-                days.`,
+  "proj2-desc": `Setting up a business in Odoo by hand took days and caused errors. I built an Excel importer for products, customers, employees and journal entries, getting it operational in hours.`,
 
   "proj3-title": `Restaurant POS Customization — Glop`,
-  "proj3-desc": `Waiters and kitchen staff communicated orders by shouting, with no visibility into
-                which dishes were pending, in progress or ready. I designed a per-station kitchen
-                display system (KDS) with a "To cook → Cooking → Ready" board and automatic routing
-                of each product to its kitchen, speeding up service and reducing order mistakes.`,
+  "proj3-desc": `Waiters and kitchen shouted orders with no visibility into what was ready. I designed per-station kitchen displays (To cook → Cooking → Ready), speeding up service and reducing mistakes.`,
 
   "proj4-title": `Attendance &amp; Absences Module`,
-  "proj4-desc": `HR had no reliable way to distinguish between a finished shift, breaks and
-                incident-related absences when calculating hours worked. I implemented a clock-in
-                flow that requires selecting the exact reason for each check-out (end of shift,
-                break, rest or medical/personal incident), rolled up into a grid view with total
-                hours per employee and day, ready for payroll.`,
+  "proj4-desc": `HR couldn't tell shift ends, breaks and incidents apart when calculating hours. I implemented a clock-in flow that requires a reason for each check-out and totals hours per employee, ready for payroll.`,
 
   "proj5-title": `Invoicing &amp; POS — Honduras Tax Localization`,
-  "proj5-desc": `The business needed to invoice legally per Honduras' SAR requirements (C.A.I.
-                authorization, 15%/18% ISV breakdown, authorized ranges), both on the invoice and the
-                Point of Sale receipt. I built the fiscal document engine that generates invoices and
-                POS receipts in the required format, ensuring regulatory compliance with no extra
-                manual steps.`,
+  "proj5-desc": `The business had to invoice per Honduras' SAR rules (C.A.I., ISV, authorized ranges), including at the POS. I built invoices and receipts in the required format, compliant with no manual steps.`,
 
   "proj6-title": `Tax Localization — El Salvador`,
-  "proj6-desc": `The Ministry of Finance requires signed electronic invoices (DTE), but its system
-                can go down at any moment and halt sales. I integrated the DIGIFACT API
-                (authentication, sealing and DTE submission) with an automatic contingency mode for
-                when the MH system is unavailable, ensuring the business never stops invoicing or
-                stays compliant with the law.`,
+  "proj6-desc": `Electronic invoicing (DTE) depends on the tax authority's system, which can go down and halt sales. I integrated DIGIFACT with an automatic contingency mode so the business never stops invoicing.`,
 
   "proj7-title": `DTE/FEL Tax Localization — Guatemala`,
-  "proj7-desc": `Guatemala's SAT requires every sale to issue a certified Electronic Tax Document
-                (FEL), even from the Point of Sale. I implemented the full FEL integration (test and
-                production environments, issuer NIT, subsidiaries) so every POS ticket and invoice
-                comes out already certified, with its authorization code visible on the customer's
-                own receipt.`,
+  "proj7-desc": `The SAT requires every sale, even at the POS, to issue a certified FEL document. I implemented the full integration so every ticket and invoice comes out certified with its authorization code.`,
 
   "proj8-title": `Manager Authorization for Discounts`,
-  "proj8-desc": `Cashiers could apply any discount in the POS with no control, risking the business'
-                margin. I developed a mechanism that compares the discount against a configurable
-                limit (e.g. 45%) and, when exceeded, blocks the sale until an authorized manager
-                enters their PIN, giving real control over who can approve larger markdowns.`,
+  "proj8-desc": `Cashiers could apply any discount with no control, risking margins. I added a configurable limit that blocks the sale until a manager approves it with their PIN.`,
 
   "proj9-title": `Fixed-Price Loyalty Program`,
-  "proj9-desc": `Odoo's standard loyalty engine only rewards with discounts or free products, but
-                the client wanted to let customers redeem points for specific products at a fixed
-                price. I added a new "Fixed Price" reward type with eligible-product rules,
-                integrated into the POS ticket, enabling a promotion that was previously impossible
-                with the out-of-the-box configuration.`,
+  "proj9-desc": `Odoo's standard loyalty couldn't redeem points for products at a fixed price. I added that reward type integrated into the POS, enabling a previously impossible promotion.`,
 
   "proj10-title": `Social Media Buttons Widget`,
-  "proj10-desc": `The marketing team needed to add and adjust direct-contact buttons (call,
-                WhatsApp) on the site without depending on a developer every time. I built a native
-                block for Odoo's Website Builder, configurable from the editor itself (position,
-                shape, social network and multiple WhatsApp numbers), giving the marketing team full
-                autonomy.`,
+  "proj10-desc": `Marketing relied on a developer to change the site's contact buttons. I built a Website Builder block configurable from the editor, giving them full autonomy.`,
 
   "proj11-title": `Interactive Popup Widget`,
-  "proj11-desc": `Generic lead-capture popups tend to be invasive and end up annoying visitors. I
-                designed a "Smart Popup" for Odoo's Website Builder with configurable position, size
-                and reappearance frequency, plus two direct-contact buttons (WhatsApp and email),
-                achieving a useful touchpoint without overloading the browsing experience.`,
+  "proj11-desc": `Generic lead-capture popups feel invasive. I designed one with configurable position, size and frequency, plus WhatsApp and email contact, useful without overwhelming visitors.`,
 
   "proj12-title": `Google Reviews Widget`,
-  "proj12-desc": `A business with great Google reviews wasn't leveraging them on its own site,
-                missing out on social proof for new visitors. I developed a widget that pulls real
-                reviews (via SerpApi, with Google Places/Business Profile as alternatives) and
-                displays them on the online store, with a settings panel and manual sync from
-                Settings, reinforcing trust on the business' page.`,
+  "proj12-desc": `The business had great Google reviews but didn't show them on its site. I built a widget that brings them to the online store automatically, building trust with new customers.`,
 
   "proj16-title": `Barcode Tool Tracking`,
-  "proj16-desc": `The workshop had no way to know which tool each employee currently had, or to
-                catch when a tool came back from someone other than who the records said had taken it.
-                I built a Barcode app for Tool Tracking inside Odoo — a full-screen OWL screen,
-                following the same logic as Odoo's native Barcode app: pick the operation type and
-                employee, scan the tool's serial number with a USB/Bluetooth reader or the device's
-                camera, and on confirm the matching internal transfer is created and validated
-                automatically. If a tool comes back from a different employee than the one on record, it
-                doesn't block the operation but instantly flags the mismatch, giving full traceability of
-                loans and returns without slowing down daily work. Covered by automated tests
-                (TransactionCase).`,
+  "proj16-desc": `The workshop didn't know which tool each employee had or catch returns by someone else. I built a scanning app in Odoo that logs loans and returns and flags mismatches, giving full traceability.`,
+
+  "proj17-title": `Attendance with Facial Recognition &amp; Digital Signature`,
+  "proj17-desc": `The workshop couldn't verify who clocked in or who approved each order. I built a clock-in with facial recognition, geolocation and tasks with a mandatory photo, plus facial validation with a digital signature when confirming orders, strengthening staff control and the traceability of every sale.`,
+
+  "proj18-title": `ePagos Integration — Payment Gateway`,
+  "proj18-desc": `The client needed to collect payments quickly and on a recurring basis without handling each one by hand. I integrated ePagos as an Odoo payment provider: payment links from the invoice, recurring direct debit (CBU and card) with bank routing, retries, refunds and chargebacks, reducing manual collection work.`,
+
+  "proj19-title": `Material Waste Control`,
+  "proj19-desc": `The workshop had no control over leftover material from each job. I built an OWL dashboard to log, search and scan leftovers by floor, reserve them and mark them as used in each task, so material gets reused instead of lost.`,
+
+  "sort-label": `Sort by:`,
+  "sort-relevance": `Relevance`,
+  "sort-date": `Most recent`,
+  "sort-difficulty": `Difficulty`,
+  "aria-sort": `Sort projects`,
 
   "proj13-title": `Flight Booking Web System`,
-  "proj13-desc": `The agency managed bookings, passengers and payments by hand, with no clear
-                visibility into profits or debt owed to wholesalers. I built a fullstack platform —
-                React, Vite and Tailwind CSS with TanStack Query and Axios on the frontend; Node.js,
-                Express and Prisma over PostgreSQL on the backend, with JWT auth and admin/salesperson
-                roles — with a real-time dashboard for sales, costs, profit, pending bookings,
-                customer balances and vendor debt. Its core is an append-only accounting ledger (every
-                movement locks the entity's row before reading its balance, preventing race
-                conditions between simultaneous sales).`,
+  "proj13-desc": `The agency handled bookings and payments by hand, with no visibility into profits or wholesaler debt. I built a fullstack platform with a real-time dashboard and accounting that prevents errors between simultaneous sales.`,
 
   "proj14-title": `JobRadar — AI-Powered Job Search Automation`,
-  "proj14-desc": `Manually checking dozens of job boards every day, without missing offers that
-                truly match your profile, is a job in itself. I built a hybrid app — a Python desktop
-                client (PySide6 + qt-material) and a React web app, sharing the same SQLite database
-                through a Node.js/Express API (better-sqlite3) — that automates the job search with
-                artificial intelligence: it crawls RemoteOK, WeWorkRemotely, Computrabajo, InfoJobs
-                and Google Custom Search, extracts the resume text (pypdf, python-docx) and scores
-                each listing by combining keyword matching with AI (Anthropic Claude API), notifying
-                only real matches via Telegram. A market-analysis panel scans live job postings and
-                shows which technologies recruiters ask for most and which ones are worth learning.`,
+  "proj14-desc": `Checking dozens of job boards daily takes hours. I built an app that crawls them, scores each listing against your resume with AI and sends only real matches to Telegram.`,
 
   "proj15-title": `MultiDown — Cross-Platform Video &amp; Audio Downloader`,
-  "proj15-desc": `Downloading a video or an entire playlist from YouTube, Facebook, Instagram or
-                TikTok usually means pasting the link into ad-filled, untrustworthy third-party
-                sites. I built MultiDown, a web app (React with Vite on the frontend, Node.js and
-                Express on the backend) that wraps yt-dlp to list the available video and audio
-                qualities, automatically mux a video with no audio with the best available track
-                (FFmpeg), and download entire playlists packed into a ZIP (archiver). It includes
-                keyword or hashtag search depending on the platform, and a local download history
-                with thumbnail, quality and date.`,
+  "proj15-desc": `Downloading videos usually means ad-filled, untrustworthy sites. I built MultiDown, which downloads video, audio and full playlists from YouTube, Instagram and TikTok at the chosen quality.`,
 
   "skills-title": `Skills`,
   "skills-hint": `Technologies and skills applied in real projects`,
@@ -1153,6 +1113,39 @@ function initTechFilters() {
     tagButtons.forEach((btn) => {
       btn.addEventListener("click", () => { setActive(btn); applyFilter(btn.dataset.tag); });
     });
+  });
+}
+
+/* ---------- Ordenar proyectos (relevancia, fecha, dificultad) ---------- */
+function initProjectSort() {
+  document.querySelectorAll(".project-sort[data-panel]").forEach((bar) => {
+    const list = document.getElementById(bar.dataset.panel)?.querySelector(".project-list");
+    if (!list) return;
+    const buttons = Array.from(bar.querySelectorAll(".project-sort__btn"));
+    const cards = Array.from(list.querySelectorAll(".project-card"));
+    const value = {
+      date: (card) => card.dataset.date || "",
+      relevance: (card) => Number(card.dataset.relevance) || 0,
+      difficulty: (card) => Number(card.dataset.difficulty) || 0,
+    };
+
+    // Orden de mayor a menor; en empate, el más reciente primero
+    function compare(a, b, key) {
+      const va = value[key](a);
+      const vb = value[key](b);
+      if (va < vb) return 1;
+      if (va > vb) return -1;
+      return key === "date" ? 0 : compare(a, b, "date");
+    }
+
+    function sortBy(key) {
+      buttons.forEach((b) => b.classList.toggle("is-active", b.dataset.sort === key));
+      [...cards].sort((a, b) => compare(a, b, key)).forEach((card) => list.appendChild(card));
+    }
+
+    buttons.forEach((btn) => btn.addEventListener("click", () => sortBy(btn.dataset.sort)));
+    const initial = buttons.find((b) => b.classList.contains("is-active"));
+    if (initial) sortBy(initial.dataset.sort);
   });
 }
 
@@ -1531,6 +1524,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".carousel").forEach(initCarousel);
   document.querySelectorAll(".project-card__tags").forEach(renderTagChips);
   initTechFilters();
+  initProjectSort();
   initSoundEffects();
   initSoundToggle();
   initThemeToggle();

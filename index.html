@@ -114,7 +114,7 @@
       <span class="badge"><span data-i18n="badge-remote">🌎 100% Remoto</span></span>
       <span class="badge">📍 Holguín, Cuba</span>
       <span class="badge"><span data-i18n="badge-experience">🚀 ~3 años de experiencia</span></span>
-      <span class="badge"><span data-i18n="badge-countries">🤝 Clientes y Trabajos en 6 Países</span></span>
+      <span class="badge"><span data-i18n="badge-countries">🤝 Clientes y Trabajos en 8 Países</span></span>
     </div>
     <div class="hero__cta">
       <a class="btn btn--primary" href="cv/CV_Macdiel_Arian.pdf" download>
@@ -190,11 +190,11 @@
         <p data-i18n="stat-years">Años de experiencia</p>
       </div>
       <div class="stat">
-        <div class="stat__value" data-count="6">0</div>
+        <div class="stat__value" data-count="8">0</div>
         <p data-i18n="stat-countries">Países con trabajos y clientes</p>
       </div>
       <div class="stat">
-        <div class="stat__value" data-count="14" data-suffix="+">0</div>
+        <div class="stat__value" data-count="16" data-suffix="+">0</div>
         <p data-i18n="stat-projects">Proyectos y módulos Odoo</p>
       </div>
       <div class="stat">
@@ -222,9 +222,76 @@
       <!-- ================= DESARROLLO ODOO ================= -->
       <div class="projects-category is-active" id="panel-odoo" role="tabpanel" aria-labelledby="tab-odoo">
         <div class="tech-filter" data-panel="panel-odoo"></div>
+        <div class="project-sort" data-panel="panel-odoo" role="group" aria-label="Ordenar proyectos" data-i18n-aria="aria-sort">
+          <span class="project-sort__label" data-i18n="sort-label">Ordenar por:</span>
+          <button type="button" class="project-sort__btn is-active" data-sort="relevance" data-i18n="sort-relevance">Relevancia</button>
+          <button type="button" class="project-sort__btn" data-sort="date" data-i18n="sort-date">Más recientes</button>
+          <button type="button" class="project-sort__btn" data-sort="difficulty" data-i18n="sort-difficulty">Dificultad</button>
+        </div>
         <div class="project-list">
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-09" data-relevance="10" data-difficulty="9">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
+              <div class="carousel__track">
+                <img loading="lazy" src="images/odoo/reconocimiento-facial-1.png" alt="Reconocimiento Facial - imagen 1">
+                <img loading="lazy" src="images/odoo/reconocimiento-facial-2.png" alt="Reconocimiento Facial - imagen 2">
+                <img loading="lazy" src="images/odoo/reconocimiento-facial-3.png" alt="Reconocimiento Facial - imagen 3">
+                <img loading="lazy" src="images/odoo/reconocimiento-facial-4.png" alt="Reconocimiento Facial - imagen 4">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente" data-i18n-aria="aria-carousel-next">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title" data-i18n="proj17-title">Asistencia con Reconocimiento Facial y Firma Digital</h4>
+              <p class="project-card__desc" data-i18n="proj17-desc">El taller no podía verificar quién marcaba la asistencia ni quién aprobaba cada pedido. Desarrollé un fichaje con reconocimiento facial, geolocalización y tareas con foto obligatoria, y una validación facial con firma digital al confirmar pedidos, reforzando el control del personal y la trazabilidad de cada venta.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #face-api.js #XML #SCSS</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-date="2026-10" data-relevance="10" data-difficulty="9">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
+              <div class="carousel__track">
+                <img loading="lazy" src="images/odoo/integracion-epagos-1.png" alt="Integración ePagos - imagen 1">
+                <img loading="lazy" src="images/odoo/integracion-epagos-2.png" alt="Integración ePagos - imagen 2">
+                <img loading="lazy" src="images/odoo/integracion-epagos-3.png" alt="Integración ePagos - imagen 3">
+                <img loading="lazy" src="images/odoo/integracion-epagos-4.png" alt="Integración ePagos - imagen 4">
+                <img loading="lazy" src="images/odoo/integracion-epagos-5.png" alt="Integración ePagos - imagen 5">
+                <img loading="lazy" src="images/odoo/integracion-epagos-6.png" alt="Integración ePagos - imagen 6">
+                <img loading="lazy" src="images/odoo/integracion-epagos-7.png" alt="Integración ePagos - imagen 7">
+                <img loading="lazy" src="images/odoo/integracion-epagos-8.png" alt="Integración ePagos - imagen 8">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente" data-i18n-aria="aria-carousel-next">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title" data-i18n="proj18-title">Integración ePagos — Pasarela de Pago</h4>
+              <p class="project-card__desc" data-i18n="proj18-desc">El cliente necesitaba cobrar de forma ágil y recurrente sin gestionar cada pago a mano. Integré ePagos como proveedor de pago de Odoo: link de pago desde la factura, débito directo recurrente (CBU y tarjeta) con ruteo por banco, reintentos, devoluciones y contracargos, reduciendo la gestión manual de cobros.</p>
+              <p class="project-card__tags">#Odoo #Python #XML #APIREST #JSON #PostgreSQL</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-date="2026-10" data-relevance="7" data-difficulty="7">
+            <div class="carousel">
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
+              <div class="carousel__track">
+                <img loading="lazy" src="images/odoo/control-mermas-1.png" alt="Control de Mermas - imagen 1">
+                <img loading="lazy" src="images/odoo/control-mermas-2.png" alt="Control de Mermas - imagen 2">
+                <img loading="lazy" src="images/odoo/control-mermas-3.png" alt="Control de Mermas - imagen 3">
+                <img loading="lazy" src="images/odoo/control-mermas-4.png" alt="Control de Mermas - imagen 4">
+              </div>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente" data-i18n-aria="aria-carousel-next">›</button>
+            </div>
+            <div class="carousel__dots"></div>
+            <div class="project-card__body">
+              <h4 class="project-card__title" data-i18n="proj19-title">Control de Mermas</h4>
+              <p class="project-card__desc" data-i18n="proj19-desc">El taller no tenía control del material sobrante de cada trabajo. Creé un tablero OWL para registrar, buscar y escanear mermas por piso, reservarlas y marcarlas como usadas en cada tarea, permitiendo reutilizar el material en lugar de perderlo.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #XML #SCSS</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-date="2025-02" data-relevance="9" data-difficulty="8">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -240,15 +307,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj1-title">Integración Krossbooking + Odoo</h4>
-              <p class="project-card__desc" data-i18n="proj1-desc">Los propietarios que alquilaban sus habitaciones dedicaban horas a copiar reservas y
-                conciliar cobros manualmente entre Krossbooking y el ERP. Desarrollé una integración
-                vía API REST que sincroniza reservas, factura automáticamente y concilia los pagos,
-                reduciendo en torno a un 30% el tiempo dedicado a estas tareas frente al proceso manual.</p>
-              <p class="project-card__tags">#Odoo #API #Integraciones</p>
+              <p class="project-card__desc" data-i18n="proj1-desc">Los propietarios copiaban reservas y conciliaban cobros a mano entre Krossbooking y el ERP. Integré ambos vía API REST para sincronizar reservas, facturar y conciliar pagos, reduciendo ~30% ese tiempo.</p>
+              <p class="project-card__tags">#Odoo #Python #XML #PostgreSQL #APIREST #JSON</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2025-05" data-relevance="7" data-difficulty="6">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -260,16 +324,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj2-title">Migración de Datos desde Excel</h4>
-              <p class="project-card__desc" data-i18n="proj2-desc">Dar de alta un negocio nuevo en Odoo a mano (cientos de
-                productos, imágenes, empleados, clientes, proveedores, categorías, asientos contables)
-                podía tomar días y era propenso a errores. Construí un asistente de importación con
-                más de 20 acciones dedicadas por tipo de dato directamente desde Excel, dejando el
-                catálogo completo de un cliente operativo en horas en lugar de días.</p>
-              <p class="project-card__tags">#Odoo #Migraciones #Excel</p>
+              <p class="project-card__desc" data-i18n="proj2-desc">Dar de alta un negocio en Odoo a mano tomaba días y generaba errores. Creé un importador desde Excel para productos, clientes, empleados y asientos, dejándolo operativo en horas.</p>
+              <p class="project-card__tags">#Odoo #Python #XML #PostgreSQL #Excel</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2024-11" data-relevance="8" data-difficulty="8">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -282,16 +342,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj3-title">Personalización POS para Restaurantes — Glop</h4>
-              <p class="project-card__desc" data-i18n="proj3-desc">Meseros y cocina se comunicaban pedidos a viva voz, sin
-                visibilidad de qué platos estaban pendientes, en preparación o listos. Diseñé un
-                sistema de pantallas de cocina (KDS) por estación, con tablero "Por cocinar → Cocinando
-                → Listo" y asignación automática de cada producto a su cocina, agilizando el servicio y
-                reduciendo errores en los pedidos.</p>
-              <p class="project-card__tags">#Odoo #POS #QWeb</p>
+              <p class="project-card__desc" data-i18n="proj3-desc">Meseros y cocina se pasaban los pedidos a viva voz, sin saber qué estaba listo. Diseñé pantallas de cocina por estación (Por cocinar → Cocinando → Listo), agilizando el servicio y reduciendo errores.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #QWeb #XML #SCSS</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2025-08" data-relevance="6" data-difficulty="5">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -304,16 +360,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj4-title">Módulo de Asistencia y Ausencias</h4>
-              <p class="project-card__desc" data-i18n="proj4-desc">RRHH no tenía forma confiable de distinguir entre jornada
-                terminada, descansos y ausencias por incidencias al calcular horas trabajadas.
-                Implementé un flujo de fichaje que obliga a seleccionar el motivo exacto de cada salida
-                (fin de jornada, pausa, descanso o incidencia médica/personal), volcado en una vista
-                grid con el total de horas por empleado y día, lista para nómina.</p>
-              <p class="project-card__tags">#Odoo #Asistencia #RecursosHumanos</p>
+              <p class="project-card__desc" data-i18n="proj4-desc">RRHH no podía distinguir fin de jornada, descansos e incidencias al calcular horas. Implementé un fichaje que exige el motivo de cada salida y resume las horas por empleado, listas para nómina.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #XML</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-03" data-relevance="8" data-difficulty="7">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -326,16 +378,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj5-title">Facturación y POS — Localización Fiscal Honduras</h4>
-              <p class="project-card__desc" data-i18n="proj5-desc">El negocio necesitaba facturar de forma legal según los
-                requisitos de la SAR hondureña (autorización C.A.I., desglose de ISV 15%/18%, rangos
-                autorizados), tanto en factura como en el ticket del Punto de Venta. Desarrollé el
-                motor de documentos fiscales que genera facturas y recibos de POS con el formato exigido,
-                asegurando cumplimiento normativo sin pasos manuales adicionales.</p>
-              <p class="project-card__tags">#Odoo #Facturación #Honduras</p>
+              <p class="project-card__desc" data-i18n="proj5-desc">El negocio debía facturar según la SAR hondureña (C.A.I., ISV, rangos autorizados) también en el POS. Desarrollé las facturas y tickets con el formato exigido, cumpliendo sin pasos manuales.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #QWeb #XML</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2025-12" data-relevance="9" data-difficulty="8">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -348,16 +396,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj6-title">Localización Fiscal — El Salvador</h4>
-              <p class="project-card__desc" data-i18n="proj6-desc">El Ministerio de Hacienda exige factura electrónica (DTE)
-                firmada, pero su sistema puede caerse en cualquier momento y detener las ventas.
-                Integré la API de DIGIFACT (autenticación, sellado y envío de DTE) con un modo de
-                contingencia automático para cuando el sistema del MH no está disponible, garantizando
-                que el negocio nunca deje de facturar ni de cumplir con la ley.</p>
-              <p class="project-card__tags">#Odoo #Facturación #ElSalvador</p>
+              <p class="project-card__desc" data-i18n="proj6-desc">La factura electrónica (DTE) depende del sistema de Hacienda, que puede caerse y frenar las ventas. Integré DIGIFACT con un modo de contingencia automático para que el negocio nunca deje de facturar.</p>
+              <p class="project-card__tags">#Odoo #Python #QWeb #XML #APIREST #JSON</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-01" data-relevance="9" data-difficulty="8">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -370,16 +414,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj7-title">Localización Fiscal DTE/FEL — Guatemala</h4>
-              <p class="project-card__desc" data-i18n="proj7-desc">La SAT de Guatemala exige que cada venta emita un
-                Documento Tributario Electrónico (FEL) certificado, incluso desde el Punto de Venta.
-                Implementé la integración FEL completa (entornos de prueba y producción, NIT emisor,
-                subsidiarias) para que cada ticket del POS y cada factura salga ya certificado, con su
-                código de autorización visible en el propio recibo del cliente.</p>
-              <p class="project-card__tags">#Odoo #FEL #Guatemala</p>
+              <p class="project-card__desc" data-i18n="proj7-desc">La SAT exige que cada venta, incluso en el POS, emita un documento FEL certificado. Implementé la integración completa para que cada ticket y factura salga certificado con su código de autorización.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #QWeb #XML #APIREST</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2025-11" data-relevance="6" data-difficulty="5">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -393,16 +433,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj8-title">Autorización de Gerente para Descuentos</h4>
-              <p class="project-card__desc" data-i18n="proj8-desc">Los cajeros podían aplicar cualquier descuento en el POS
-                sin control, arriesgando el margen del negocio. Desarrollé un mecanismo que compara
-                el descuento contra un límite configurable (p. ej. 45%) y, al superarlo, bloquea la
-                venta hasta que un gerente autorizado ingresa su PIN, dejando un control real sobre
-                quién puede aprobar rebajas mayores.</p>
-              <p class="project-card__tags">#Odoo #POS #Seguridad</p>
+              <p class="project-card__desc" data-i18n="proj8-desc">Los cajeros podían aplicar cualquier descuento sin control, arriesgando el margen. Añadí un límite configurable que bloquea la venta hasta que un gerente la autorice con su PIN.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #XML</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-04" data-relevance="6" data-difficulty="6">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -415,16 +451,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj9-title">Programa de Lealtad con Precio Fijo</h4>
-              <p class="project-card__desc" data-i18n="proj9-desc">El motor de lealtad estándar de Odoo solo permite premiar
-                con descuentos o productos gratis, pero el cliente quería dejar canjear puntos por
-                productos específicos a un precio fijo. Agregué un nuevo tipo de recompensa "Precio
-                Fijo" con reglas de productos elegibles, integrado en el ticket del POS, habilitando
-                una promoción que antes era imposible con la configuración de fábrica.</p>
-              <p class="project-card__tags">#Odoo #POS #Lealtad</p>
+              <p class="project-card__desc" data-i18n="proj9-desc">La lealtad estándar de Odoo no permitía canjear puntos por productos a precio fijo. Agregué ese tipo de recompensa integrado al POS, habilitando una promoción antes imposible.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #XML</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-08" data-relevance="4" data-difficulty="3">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -437,16 +469,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj10-title">Widget de Botones de Redes Sociales</h4>
-              <p class="project-card__desc" data-i18n="proj10-desc">El equipo de marketing necesitaba añadir y ajustar botones
-                de contacto directo (llamada, WhatsApp) en el sitio sin depender de un desarrollador
-                cada vez. Construí un bloque nativo para el Website Builder de Odoo, configurable desde
-                el propio editor (posición, forma, red social y varios números de WhatsApp), dándole
-                autonomía total al equipo de marketing.</p>
-              <p class="project-card__tags">#Odoo #QWeb #Widget</p>
+              <p class="project-card__desc" data-i18n="proj10-desc">Marketing dependía de un desarrollador para cambiar los botones de contacto del sitio. Creé un bloque para el Website Builder configurable desde el editor, dándoles total autonomía.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #QWeb #XML #SCSS</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-08" data-relevance="4" data-difficulty="3">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -458,16 +486,12 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj11-title">Widget de Popup Interactivo</h4>
-              <p class="project-card__desc" data-i18n="proj11-desc">Los popups genéricos de captación suelen ser invasivos y
-                terminan molestando al visitante. Diseñé un "Popup Inteligente" para el Website Builder
-                de Odoo con posición, tamaño y frecuencia de reaparición configurables, y dos botones de
-                contacto directo (WhatsApp y correo), logrando un punto de contacto útil sin saturar la
-                experiencia de navegación.</p>
-              <p class="project-card__tags">#Odoo #QWeb #Widget</p>
+              <p class="project-card__desc" data-i18n="proj11-desc">Los popups de captación genéricos resultan invasivos. Diseñé uno configurable en posición, tamaño y frecuencia, con contacto por WhatsApp y correo, útil sin saturar al visitante.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #QWeb #XML #SCSS</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-08" data-relevance="5" data-difficulty="5">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
@@ -480,41 +504,25 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj12-title">Widget de Reseñas Google</h4>
-              <p class="project-card__desc" data-i18n="proj12-desc">Un negocio con buenas reseñas en Google no las aprovechaba
-                en su propia web, perdiendo prueba social frente a nuevos visitantes. Desarrollé un
-                widget que trae las reseñas reales (vía SerpApi, con Google Places/Business Profile
-                como alternativas) y las muestra en la tienda online, con panel de configuración y
-                sincronización manual desde Ajustes, reforzando la confianza en la página del negocio.</p>
-              <p class="project-card__tags">#Odoo #Google #Widget</p>
+              <p class="project-card__desc" data-i18n="proj12-desc">El negocio tenía buenas reseñas en Google pero no las mostraba en su web. Desarrollé un widget que las trae automáticamente a la tienda online, reforzando la confianza de nuevos clientes.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #QWeb #XML #SCSS #SerpApi</p>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-date="2026-09" data-relevance="8" data-difficulty="7">
             <div class="carousel">
               <button class="carousel__arrow carousel__arrow--prev" aria-label="Imagen anterior" data-i18n-aria="aria-carousel-prev">‹</button>
               <div class="carousel__track">
-                <img loading="lazy" src="images/odoo/seguimiento-herramientas-1.png" alt="Seguimiento de Herramientas - imagen 1">
-                <img loading="lazy" src="images/odoo/seguimiento-herramientas-2.png" alt="Seguimiento de Herramientas - imagen 2">
-                <img loading="lazy" src="images/odoo/seguimiento-herramientas-3.png" alt="Seguimiento de Herramientas - imagen 3">
-                <img loading="lazy" src="images/odoo/seguimiento-herramientas-4.png" alt="Seguimiento de Herramientas - imagen 4">
+                <img loading="lazy" src="images/odoo/herramientas-codigo-barras-1.png" alt="Seguimiento de Herramientas - imagen 1">
+                <img loading="lazy" src="images/odoo/herramientas-codigo-barras-2.png" alt="Seguimiento de Herramientas - imagen 2">
               </div>
               <button class="carousel__arrow carousel__arrow--next" aria-label="Imagen siguiente" data-i18n-aria="aria-carousel-next">›</button>
             </div>
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj16-title">Código de Barras para Seguimiento de Herramientas</h4>
-              <p class="project-card__desc" data-i18n="proj16-desc">El taller no tenía forma de saber qué herramienta tenía
-                prestada cada empleado en un momento dado, ni de detectar cuando alguien la devolvía sin
-                coincidir con quien figuraba habérsela llevado. Desarrollé una app de Código de Barras
-                para Herramientas dentro de Odoo —una pantalla OWL a pantalla completa, con la misma
-                lógica que la app nativa de Código de Barras—: se elige el tipo de operación y el
-                empleado, se escanea el número de serie con lector USB/Bluetooth o la cámara del
-                dispositivo, y al confirmar se crea y valida automáticamente la transferencia interna
-                correspondiente. Si la herramienta vuelve de un empleado distinto al registrado, no
-                bloquea la operación pero avisa al instante con el detalle del cambio, dando trazabilidad
-                completa de préstamos y devoluciones sin frenar el trabajo diario. Cubierto con pruebas
-                automatizadas (TransactionCase).</p>
-              <p class="project-card__tags">#Odoo #OWL #Inventario</p>
+              <p class="project-card__desc" data-i18n="proj16-desc">El taller no sabía qué herramienta tenía cada empleado ni detectaba devoluciones de otra persona. Creé una app de escaneo en Odoo que registra préstamos y devoluciones y alerta discrepancias, dando trazabilidad completa.</p>
+              <p class="project-card__tags">#Odoo #Python #JavaScript #OWL #XML #SCSS</p>
             </div>
           </article>
 
@@ -540,15 +548,8 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj13-title">Sistema Web de Reservas de Vuelos</h4>
-              <p class="project-card__desc" data-i18n="proj13-desc">La agencia gestionaba reservas, pasajeros y pagos a mano, sin
-                visibilidad clara de ganancias ni de la deuda con los mayoristas. Desarrollé una plataforma
-                fullstack — React, Vite y Tailwind CSS con TanStack Query y Axios en el frontend; Node.js,
-                Express y Prisma sobre PostgreSQL en el backend, con autenticación JWT y roles de
-                administrador y vendedor — con un dashboard en tiempo real de ventas, costos, ganancia,
-                reservas pendientes, saldo de clientes y deuda con proveedores. El núcleo es un libro
-                contable de solo inserción (cada movimiento bloquea la fila de la entidad antes de leer su
-                saldo, evitando condiciones de carrera entre ventas simultáneas).</p>
-              <p class="project-card__tags">#React #NodeJS #PostgreSQL #Prisma</p>
+              <p class="project-card__desc" data-i18n="proj13-desc">La agencia gestionaba reservas y pagos a mano, sin visibilidad de ganancias ni deudas con mayoristas. Construí una plataforma fullstack con dashboard en tiempo real y contabilidad que evita errores entre ventas simultáneas.</p>
+              <p class="project-card__tags">#React #Vite #TailwindCSS #TanStackQuery #NodeJS #Express #Prisma #PostgreSQL #JWT</p>
             </div>
           </article>
 
@@ -567,17 +568,8 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj14-title">JobRadar — Automatización de Búsqueda de Empleo con IA</h4>
-              <p class="project-card__desc" data-i18n="proj14-desc">Revisar a mano decenas de portales de empleo cada día, sin perder
-                las ofertas realmente compatibles con el perfil, es un trabajo aparte. Construí una
-                aplicación híbrida — escritorio en Python (PySide6 + qt-material) y web en React,
-                compartiendo la misma base de datos SQLite a través de una API en Node.js/Express
-                (better-sqlite3) — que automatiza la búsqueda de empleo con inteligencia artificial:
-                rastrea RemoteOK, WeWorkRemotely, Computrabajo, InfoJobs y Google Custom Search, extrae el
-                texto del CV (pypdf, python-docx) y puntúa cada oferta combinando palabras clave con IA
-                (API de Anthropic Claude), avisando por Telegram solo las que de verdad encajan. Un panel
-                de análisis de mercado escanea vacantes reales y muestra qué tecnologías piden más los
-                reclutadores y cuáles conviene reforzar.</p>
-              <p class="project-card__tags">#Python #PySide6 #React #NodeJS #IA</p>
+              <p class="project-card__desc" data-i18n="proj14-desc">Revisar a diario decenas de portales de empleo consume horas. Construí una app que los rastrea, puntúa cada oferta contra el CV con IA y avisa por Telegram solo las que encajan.</p>
+              <p class="project-card__tags">#Python #PySide6 #React #NodeJS #Express #SQLite #Claude #Telegram</p>
               <a class="project-card__link" href="https://github.com/macdydev21/jobradar" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.53 9.53 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
                 <span data-i18n="cta-view-repo">Ver código en GitHub</span>
@@ -601,15 +593,8 @@
             <div class="carousel__dots"></div>
             <div class="project-card__body">
               <h4 class="project-card__title" data-i18n="proj15-title">MultiDown — Descargador Multiplataforma de Video y Audio</h4>
-              <p class="project-card__desc" data-i18n="proj15-desc">Descargar un video o una lista de reproducción completa de
-                YouTube, Facebook, Instagram o TikTok suele implicar pegar el enlace en sitios de terceros
-                llenos de anuncios y de dudosa confianza. Desarrollé MultiDown, una app web (React con Vite
-                en el frontend, Node.js y Express en el backend) que envuelve yt-dlp para listar las
-                calidades de video y audio disponibles, mezclar automáticamente un video sin audio con la
-                mejor pista disponible (FFmpeg) y descargar listas de reproducción completas comprimidas en
-                ZIP (archiver). Incluye búsqueda por palabra clave o hashtag según la plataforma y un
-                historial local de descargas con miniatura, calidad y fecha.</p>
-              <p class="project-card__tags">#React #NodeJS #FFmpeg</p>
+              <p class="project-card__desc" data-i18n="proj15-desc">Descargar videos suele obligar a usar sitios llenos de anuncios y poco confiables. Desarrollé MultiDown, que descarga video, audio y listas completas de YouTube, Instagram y TikTok eligiendo la calidad.</p>
+              <p class="project-card__tags">#React #Vite #NodeJS #Express #yt-dlp #FFmpeg</p>
               <a class="project-card__link" href="https://github.com/macdydev21/multidown" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.53 9.53 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
                 <span data-i18n="cta-view-repo">Ver código en GitHub</span>

@@ -1010,21 +1010,22 @@ img { max-width: 100%; }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* La sección de proyectos usa más ancho que el resto para que las tarjetas respiren */
+#proyectos.section-wrap { max-width: 1480px; }
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px 24px;
-  max-width: 1600px;
+  gap: 32px 28px;
   margin: 0 auto;
-  padding: 0 32px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .project-list { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 600px) {
-  .project-list { grid-template-columns: 1fr; max-width: 480px; }
+@media (max-width: 680px) {
+  .project-list { grid-template-columns: 1fr; max-width: 560px; }
 }
 
 /* ---------- Project card ---------- */
@@ -1045,7 +1046,7 @@ img { max-width: 100%; }
 }
 
 .project-card__body {
-  padding: 16px 18px 20px;
+  padding: 18px 22px 22px;
 }
 
 .project-card__title {
@@ -1127,6 +1128,44 @@ img { max-width: 100%; }
 }
 
 .tech-filter:empty { display: none; margin: 0; }
+
+/* ---------- Ordenar proyectos ---------- */
+.project-sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: -8px auto 28px;
+  padding: 0 20px;
+}
+
+.project-sort__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.project-sort__btn {
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.project-sort__btn:hover { border-color: var(--accent); color: var(--text); }
+
+.project-sort__btn.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
 
 .tech-filter__btn {
   display: inline-flex;
